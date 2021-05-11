@@ -1,5 +1,6 @@
 
 // Add note to local storage
+
 let addBtn = document.getElementById("add-btn");
 
 addBtn.addEventListener("click", function(e) {
@@ -35,6 +36,7 @@ addBtn.addEventListener("click", function(e) {
   showNotes();
 });
 
+
 // Function to show elements from localStorage
 function showNotes() {
   
@@ -52,7 +54,9 @@ function showNotes() {
     html += `
         <div class="note">
             <h3 class="note-title"> ${element.title} </h3>
+            <div>
             <p class="note-text"> ${element.text}</p>
+            </div>
             <button id="${index}"onclick="deleteNote(this.id)" class="note-btn">Delete Note</button>
             <button id="${index}"onclick="editNote(this.id)" class="note-btn edit-btn">Edit Note</button>
         </div>
