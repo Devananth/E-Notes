@@ -121,3 +121,5 @@ function editNote(index) {
 
 
 showNotes();
+
+// End of the project
